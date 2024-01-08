@@ -1,6 +1,8 @@
 # 💡2022년 2학기 고급자료구조 과제
 
-## 🌟SIC(Simplified Instructional Computer)의 구조(Architecture), 명령어 포멧(Instruction formats), 주소 형식(Addressing modes)
+## 🌟SIC(Simplified Instructional Computer)의 구조(Architecture)
+## 🌟명령어 포멧(Instruction formats)
+## 🌟주소 형식(Addressing modes)
 
 SIC, SIC/XE
 : Hypothetical한 컴퓨터로 실제 컴퓨터 명령어를 단순화한 것
