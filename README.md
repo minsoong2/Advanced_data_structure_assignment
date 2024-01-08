@@ -96,3 +96,41 @@ The following commands are used for interacting with the INDEV (Input Device)
 - `FIVE WORD 5`: Defines a word with the value of 5.
 - `CHARZ BYTE C'Z'`: Defines a byte with the character constant 'Z'.
 - `C1 RESB 1`: Reserves space for 1 byte.
+
+## 🚀Assembler Implementation Requirements
+
+The assembler program should be able to compile the given assembly language and produce object code. For example:
+
+COPY START 2000  
+LDA FIVE  
+STA ALPHA  
+LDCH CHARZ  
+STCH C1  
+ALPHA RESW 1  
+FIVE WORD 5  
+CHARZ BYTE C'EOF'  
+C1 RESB 1  
+END  
+
+
+The assembler will generate an object program with the header, text, and end records.
+
+## 🚀Submission Requirements
+
+- The program must be written in C and should compile and run in a Linux environment.
+- Makefile must be used for compilation.
+- The submission should include a design document, revised design document, and program documentation.
+
+## 🚀Evaluation
+
+- The evaluation will be based on the successful compilation and execution of two input files and a presentation.
+
+## 🚀Deadlines
+
+- Design Document: November 14th
+- Revised Design Document: November 18th
+- Program Documentation: November 30th
+
+## 🚀References
+
+- For detailed understanding, refer to [Youngkyu's Blog on RESW](http://dev.youngkyu.kr/tag/RESW).
