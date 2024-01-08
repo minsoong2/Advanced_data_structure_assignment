@@ -11,28 +11,28 @@ Word를 구성하는 3바이트 중 최하위 바이트의 위치 -> address �
 
 ### 📘Architecture of SIC - Register(A, X, L, PC, SW)
 
-A: Used for basic arithmetic operations (Accumulator register)
-X: Stores and calculates addresses (indeX register)
-L: Used for jumping to specific memory addresses and storing return register (Linkage register)
--> SIC does not have a stack
-PC: Contains the address of th next instruction to execute (Program Counter)
-SW: Contains a variety of information, such as carry or flags... (Status Word register)
+A: Used for basic arithmetic operations (Accumulator register)  
+X: Stores and calculates addresses (indeX register)  
+L: Used for jumping to specific memory addresses and storing return register (Linkage register)  
+-> SIC does not have a stack  
+PC: Contains the address of th next instruction to execute (Program Counter)  
+SW: Contains a variety of information, such as carry or flags... (Status Word register)  
 
 ### 📘Architecture of SIC - Data formats(Character, Integer)
 
-SIC -> Floating-point number -> 지원 x / SIC/XE -> Floating-point number -> 지원 o
-Character: 8 bits (ASCII)
-Interger: 24 bits (Management with binary numbers)
-negative: expression of 2's complement
+SIC -> Floating-point number -> 지원 x / SIC/XE -> Floating-point number -> 지원 o  
+Character: 8 bits (ASCII)  
+Interger: 24 bits (Management with binary numbers)  
+negative: expression of 2's complement  
 
 ### 📘Architecture of SIC - Instruction formats, Addressing mode
 
-Instruction formats: 24bits
-8 bits opcode + 1 bit X + 15 bits Address
-Opcode: What command to give
-X: flag (Index-Address mode) 1 -> Index-Address mode, 0 -> Direct address
-Address: Direct address = Direct address
-		 Index-Address = Address + X (Address of index register)
+Instruction formats: 24bits  
+8 bits opcode + 1 bit X + 15 bits Address  
+Opcode: What command to give  
+X: flag (Index-Address mode) 1 -> Index-Address mode, 0 -> Direct address  
+Address: Direct address = Direct address  
+		 Index-Address = Address + X (Address of index register)  
 		 
 ### 🌟Instruction of SIC
 
