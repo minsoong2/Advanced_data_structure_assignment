@@ -5,7 +5,7 @@
 ## 🌟주소 형식(Addressing modes)
 
 SIC, SIC/XE
-: Hypothetical한 컴퓨터로 실제 컴퓨터 명령어를 단순화한 것
+: Hypothetical한 컴퓨터로 실제 컴퓨터 명령어를 단순화한 것 \n
   size of memory = 2^15
 
 8 bits = 1 byte
