@@ -1,39 +1,40 @@
-# 💡2022년 2학기 고급자료구조 과제
+# 💡 Advanced Data Structures Assignment - Fall 2022
 
-SIC, SIC/XE
-: Hypothetical한 컴퓨터로 실제 컴퓨터 명령어를 단순화한 것
+## SIC, SIC/XE
+: A hypothetical computer used to simplify the study of actual computer instructions.
 
-8 bits = 1 byte  
-3 consecutive Bytes = 1 Word  
-Word를 구성하는 3바이트 중 최하위 바이트의 위치 -> address 지정
+- **8 bits** = 1 byte
+- **3 consecutive Bytes** = 1 Word
+- The lowest byte of the 3 bytes that make up a Word determines the address.
 
-## 🌟Architecture of SIC(Simplified Instructional Computer)
+## 🌟 Architecture of SIC (Simplified Instructional Computer)
 
-### 📘Architecture of SIC - Register(A, X, L, PC, SW)
+### 📘 Architecture of SIC - Registers (A, X, L, PC, SW)
 
-A: Used for basic arithmetic operations (Accumulator register)  
-X: Stores and calculates addresses (indeX register)  
-L: Used for jumping to specific memory addresses and storing return register (Linkage register)  
--> SIC does not have a stack  
-PC: Contains the address of th next instruction to execute (Program Counter)  
-SW: Contains a variety of information, such as carry or flags... (Status Word register)  
+- **A**: Used for basic arithmetic operations (Accumulator register).
+- **X**: Stores and calculates addresses (Index register).
+- **L**: Used for jumping to specific memory addresses and storing the return address (Linkage register).
+  - SIC does not have a stack.
+- **PC**: Contains the address of the next instruction to execute (Program Counter).
+- **SW**: Contains a variety of information, such as carry or flags (Status Word register).
 
-### 📘Architecture of SIC - Data formats(Character, Integer)
+### 📘 Architecture of SIC - Data formats (Character, Integer)
 
-SIC -> Floating-point number -> 지원 x / SIC/XE -> Floating-point number -> 지원 o  
-Character: 8 bits (ASCII)  
-Interger: 24 bits (Management with binary numbers)  
-negative: expression of 2's complement  
+- SIC does not support floating-point numbers. SIC/XE does support floating-point numbers.
+- **Character**: 8 bits (ASCII).
+- **Integer**: 24 bits (Managed with binary numbers).
+  - Negative numbers are represented using 2's complement.
 
-### 📘Architecture of SIC - Instruction formats, Addressing mode
+### 📘 Architecture of SIC - Instruction formats, Addressing mode
 
-Instruction formats: 24bits  
-8 bits opcode + 1 bit X + 15 bits Address  
-Opcode: What command to give  
-X: flag (Index-Address mode) 1 -> Index-Address mode, 0 -> Direct address  
-Address: Direct address = Direct address  
-		 Index-Address = Address + X (Address of index register)  
-		 
+- **Instruction formats**: 24 bits.
+  - 8 bits for opcode + 1 bit X + 15 bits for address.
+- **Opcode**: Determines the command to be executed.
+- **X**: A flag for Index-Address mode (1 indicates Index-Address mode, 0 indicates Direct Address mode).
+- **Address**:
+  - Direct Address = Direct address.
+  - Index-Address = Address + X (Address of the index register).
+
 ### 🌟Instruction of SIC
 
 #### 📘Load & Store Instructions
